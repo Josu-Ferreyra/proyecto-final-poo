@@ -12,11 +12,11 @@ Sistema de escritorio desarrollado en Java y Swing para la gestión de clientes,
 1.  [Problemática](#-problemática-el-desorden-del-vendedor-independiente)
 2.  [Solución Propuesta](#-solución-propuesta-una-herramienta-centralizada)
 3.  [Funcionalidades Clave](#-funcionalidades-clave)
-4.  [Arquitectura del Proyecto](#-arquitectura-del-proyecto)
+4.  [Arquitectura del Proyecto](#%EF%B8%8F-arquitectura-del-proyecto)
 5.  [Esquema de la Base de Datos](#-esquema-de-la-base-de-datos)
-6.  [Stack Tecnológico](#-stack-tecnológico)
+6.  [Stack Tecnológico](#%EF%B8%8F-stack-tecnológico)
 7.  [Cómo Empezar](#-cómo-empezar)
-8.  [Autor](#-autor)
+8.  [Autor](#%E2%80%8D-autor)
 
 ## 🎯 Problemática: El Desorden del Vendedor Independiente
 
@@ -136,7 +136,7 @@ Para ejecutar este proyecto en tu máquina local, sigue estos pasos:
 2.  **Clonar el Repositorio:**
 
     ```bash
-    git clone [https://github.com/](https://github.com/)[TU_USUARIO]/[NOMBRE_DEL_REPOSITORIO].git
+    git clone https://github.com/Josu-Ferreyra/proyecto-final-poo.git
     ```
 
 3.  **Configurar la Base de Datos:**
