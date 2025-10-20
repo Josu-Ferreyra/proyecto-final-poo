@@ -7,5 +7,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="at.favre.lib.bcrypt" level="application" />
+    <orderEntry type="library" name="ops4j.pax.jdbc.mysql" level="application" />
   </component>
 </module>
