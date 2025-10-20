@@ -1,9 +1,12 @@
 package controllers;
 
+import models.dao.ClienteDAO;
+import models.dao.ProductoDAO;
 import models.dao.UsuarioDAO;
 import models.pojo.Usuario;
 import views.VistaAdmin;
 import views.VistaLogin;
+import views.VistaVendedor;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -45,7 +48,12 @@ public class ControladorLogin implements ActionListener {
                 ControladorAdmin adminController = new ControladorAdmin(adminVista, this.modelo);
                 adminController.iniciar();
             } else { // 2 = Vendedor
-                System.out.println("Iniciando vista de Vendedor...");
+                ClienteDAO clienteDAO = new ClienteDAO();
+                ProductoDAO productoDAO = new ProductoDAO();
+                VistaVendedor vendedorVista = new VistaVendedor(usuario.getNombre());
+
+                ControladorVendedor vendedorController = new ControladorVendedor(vendedorVista, usuario, clienteDAO, productoDAO);
+                vendedorController.iniciar();
             }
 
         } else {
