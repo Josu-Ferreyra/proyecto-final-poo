@@ -1,5 +1,8 @@
+package controllers;
+
 import models.dao.UsuarioDAO;
 import models.pojo.Usuario;
+import views.VistaAdmin;
 import views.VistaLogin;
 
 import javax.swing.*;
@@ -38,7 +41,9 @@ public class ControladorLogin implements ActionListener {
             JOptionPane.showMessageDialog(null, "¡Bienvenido " + usuario.getNombre() + "!");
 
             if (usuario.getId_rol() == 1) { // 1 = Admin
-                System.out.println("Iniciando vista de Administrador...");
+                VistaAdmin adminVista = new VistaAdmin();
+                ControladorAdmin adminController = new ControladorAdmin(adminVista, this.modelo);
+                adminController.iniciar();
             } else { // 2 = Vendedor
                 System.out.println("Iniciando vista de Vendedor...");
             }
